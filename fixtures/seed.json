@@ -1,0 +1,7 @@
+{
+  "project": "海外眼健康行动协同",
+  "records": [
+    {"id": "mission-fiji-2026", "kind": "mission", "screening_capacity": 180, "treatment_capacity": 110, "local_hospital": "苏瓦殖民战争纪念医院"},
+    {"id": "device-chongming-03", "kind": "screening_device", "capabilities": ["眼前节采集", "白内障辅助筛查"], "offline_batches": true}
+  ]
+}
