@@ -1,7 +1,34 @@
 {
   "project": "海外眼健康行动协同",
   "records": [
-    {"id": "mission-fiji-2026", "kind": "mission", "screening_capacity": 180, "treatment_capacity": 110, "local_hospital": "苏瓦殖民战争纪念医院"},
-    {"id": "device-chongming-03", "kind": "screening_device", "capabilities": ["眼前节采集", "白内障辅助筛查"], "offline_batches": true}
+    {"id": "mission-fiji-2026", "kind": "mission", "name": "斐济光明行 2026", "screening_capacity": 180, "treatment_capacity": 110, "local_hospital": "苏瓦殖民战争纪念医院", "local_hospital_id": "org-cwm-hospital", "start_date": "2026-09-21", "end_date": "2026-09-30"},
+
+    {"id": "device-chongming-03", "kind": "screening_device", "name": "崇明三号便携筛查箱", "capabilities": ["眼前节采集", "白内障辅助筛查"], "offline_batches": true},
+    {"id": "device-chongming-07", "kind": "screening_device", "name": "崇明七号便携筛查箱", "capabilities": ["眼前节采集", "白内障辅助筛查", "眼压测量"], "offline_batches": true},
+    {"id": "device-microscope-01", "kind": "operating_equipment", "name": "手术显微镜 A", "location_id": "or-cwm-1"},
+    {"id": "device-phaco-01", "kind": "operating_equipment", "name": "超声乳化仪 A", "location_id": "or-cwm-1", "failure_prone": true},
+
+    {"id": "site-suwa-hall", "kind": "screening_site", "name": "苏瓦社区筛查点", "daily_capacity": 120},
+    {"id": "site-nausori-clinic", "kind": "screening_site", "name": "瑙索里诊所筛查点", "daily_capacity": 60},
+
+    {"id": "or-cwm-1", "kind": "operating_room", "name": "CWM 医院一号手术室", "hospital_id": "org-cwm-hospital", "slots_per_day": 4},
+    {"id": "or-cwm-2", "kind": "operating_room", "name": "CWM 医院二号手术室", "hospital_id": "org-cwm-hospital", "slots_per_day": 3},
+
+    {"id": "staff-cn-lead", "kind": "staff", "name": "李远征", "role": "领队/眼科主治", "org_id": "org-chinese-team", "qualifications": ["doctor"]},
+    {"id": "staff-cn-surgeon", "kind": "staff", "name": "周明洁", "role": "眼科主刀", "org_id": "org-chinese-team", "qualifications": ["surgeon"]},
+    {"id": "staff-cn-nurse", "kind": "staff", "name": "陈晓", "role": "手术室护士", "org_id": "org-chinese-team", "qualifications": ["nurse"]},
+    {"id": "staff-cn-tech", "kind": "staff", "name": "王涛", "role": "设备技师", "org_id": "org-chinese-team", "qualifications": ["technician"]},
+    {"id": "staff-fj-doctor", "kind": "staff", "name": "Ateca Ravai", "role": "本地眼科医生", "org_id": "org-cwm-hospital", "qualifications": ["doctor"]},
+    {"id": "staff-fj-nurse", "kind": "staff", "name": "Josaia Tui", "role": "本地随访护士", "org_id": "org-cwm-hospital", "qualifications": ["nurse"]},
+    {"id": "staff-fj-translator", "kind": "staff", "name": "Lani Vuni", "role": "iTaukei 语翻译/见证人", "org_id": "org-cwm-hospital", "qualifications": ["translator", "witness"]},
+    {"id": "staff-fj-coordinator", "kind": "staff", "name": "Mere Saukuru", "role": "本地转介协调员", "org_id": "org-cwm-hospital", "qualifications": ["coordinator"]},
+
+    {"id": "cons-iol-21", "kind": "consumable", "name": "21D 人工晶体", "unit": "枚", "stock": 60},
+    {"id": "cons-iol-23", "kind": "consumable", "name": "23D 人工晶体", "unit": "枚", "stock": 50},
+    {"id": "cons-suture", "kind": "consumable", "name": "10-0 缝合线", "unit": "包", "stock": 40},
+    {"id": "cons-drop", "kind": "consumable", "name": "术后滴眼液套装", "unit": "套", "stock": 120},
+
+    {"id": "org-chinese-team", "kind": "org", "name": "中国流动眼科医疗队", "scope": "visiting_team"},
+    {"id": "org-cwm-hospital", "kind": "org", "name": "苏瓦殖民战争纪念医院", "scope": "local_hospital"}
   ]
 }
