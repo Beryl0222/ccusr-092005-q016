@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "start": "node src/main.js",
+    "demo": "node scripts/demo.mjs"
   }
 }

@@ -1,7 +1,33 @@
 {
   "project": "海外眼健康行动协同",
   "records": [
-    {"id": "mission-fiji-2026", "kind": "mission", "screening_capacity": 180, "treatment_capacity": 110, "local_hospital": "苏瓦殖民战争纪念医院"},
-    {"id": "device-chongming-03", "kind": "screening_device", "capabilities": ["眼前节采集", "白内障辅助筛查"], "offline_batches": true}
+    {"id": "mission-fiji-2026", "kind": "mission", "name": "2026斐济光明行流动眼科行动", "screening_capacity": 180, "treatment_capacity": 110, "start_date": "2026-09-22", "end_date": "2026-09-30", "site": "苏瓦", "status": "active", "local_hospital": "苏瓦殖民战争纪念医院", "local_hospital_id": "hospital-cwm", "liaison_member_id": "staff-jonasa"},
+
+    {"id": "hospital-cwm", "kind": "local_hospital", "name": "苏瓦殖民战争纪念医院", "department": "眼科", "contact": "+679-331-5500"},
+    {"id": "hospital-nadi", "kind": "local_hospital", "name": "楠迪地区医院", "department": "眼科", "contact": "+679-670-1100"},
+
+    {"id": "room-or-1", "kind": "resource", "type": "room", "name": "一号手术间"},
+    {"id": "room-or-2", "kind": "resource", "type": "room", "name": "二号手术间"},
+
+    {"id": "eq-phaco-01", "kind": "resource", "type": "equipment", "name": "超声乳化仪1号机", "room_hint": "room-or-1"},
+    {"id": "eq-phaco-02", "kind": "resource", "type": "equipment", "name": "便携式超声乳化仪2号机（备机）", "room_hint": "room-or-2"},
+    {"id": "eq-microscope-01", "kind": "resource", "type": "equipment", "name": "手术显微镜1号", "room_hint": "room-or-1"},
+    {"id": "eq-microscope-02", "kind": "resource", "type": "equipment", "name": "手术显微镜2号", "room_hint": "room-or-2"},
+
+    {"id": "staff-chen", "kind": "member", "name": "陈明", "org": "chinese_team", "roles": ["doctor"], "mission_ids": ["mission-fiji-2026"]},
+    {"id": "staff-lin", "kind": "member", "name": "林晓", "org": "chinese_team", "roles": ["nurse"], "mission_ids": ["mission-fiji-2026"]},
+    {"id": "staff-wang", "kind": "member", "name": "王磊", "org": "chinese_team", "roles": ["mission_lead", "coordinator"], "mission_ids": ["mission-fiji-2026"]},
+    {"id": "staff-singh", "kind": "member", "name": "苏尼尔·辛格", "org": "local_hospital", "hospital_id": "hospital-cwm", "roles": ["doctor"], "mission_ids": ["mission-fiji-2026"]},
+    {"id": "staff-ana", "kind": "member", "name": "阿娜·拉图", "org": "local_hospital", "hospital_id": "hospital-cwm", "roles": ["nurse"], "mission_ids": ["mission-fiji-2026"]},
+    {"id": "staff-jonasa", "kind": "member", "name": "乔内萨·卡罗", "org": "local_hospital", "hospital_id": "hospital-cwm", "roles": ["coordinator", "liaison"], "mission_ids": ["mission-fiji-2026"]},
+    {"id": "staff-other", "kind": "member", "name": "其他任务队员", "org": "chinese_team", "roles": ["coordinator"], "mission_ids": ["mission-vanuatu-2026"]},
+    {"id": "staff-ram", "kind": "member", "name": "拉姆·普拉萨德", "org": "local_hospital", "hospital_id": "hospital-nadi", "roles": ["doctor"], "mission_ids": []},
+
+    {"id": "cons-iol", "kind": "resource", "type": "consumable", "name": "人工晶体", "unit": "片", "stock": 30},
+    {"id": "cons-visc", "kind": "resource", "type": "consumable", "name": "眼用黏弹剂", "unit": "支", "stock": 40},
+    {"id": "cons-pack", "kind": "resource", "type": "consumable", "name": "白内障手术耗材包", "unit": "套", "stock": 25},
+
+    {"id": "device-chongming-03", "kind": "screening_device", "name": "崇明03号便携筛查箱", "capabilities": ["眼前节采集", "白内障辅助筛查"], "offline_batches": true},
+    {"id": "device-chongming-07", "kind": "screening_device", "name": "崇明07号便携筛查箱", "capabilities": ["眼前节采集", "白内障辅助筛查"], "offline_batches": true}
   ]
 }
